@@ -51,4 +51,10 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  # Note: If you discover that Better Errors isn't working - particularly after
+  # upgrading from version 0.5.0 or less - be sure to set
+  # config.consider_all_requests_local = true in config/environments/development.rb.
+
+  config.consider_all_requests_local = true
 end
